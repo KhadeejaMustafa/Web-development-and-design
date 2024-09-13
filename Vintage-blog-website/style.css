@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    background-color: #f7e8cdd5;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+nav{
+    
+    padding-bottom: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    list-style: none;
+    display: inline;
+    position: relative;
+    
+}
+nav ul{
+    align-items: center;
+    letter-spacing: 2px;
+    padding: 0px;
+    margin: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    align-items: center;
+    padding: 13px;
+  
+
+}
+nav ul li a:hover{
+color: burlywood;
+transition: 0.3s;
+}
+nav ul li a:active{
+color: rgb(201, 157, 99);
+}
+
+nav ul li a:focus{
+    color: rgb(201, 157, 99);
+    }
+nav #iconsPic{
+    position: relative;
+    top: 18px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+#thelogo{
+    width: 16%;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+}
+
+footer{
+    background-color: rgb(219, 191, 157);
+    margin: 0px;
+    text-align: center;
+}
+footer ul{
+    margin: 0;
+}
+
+ .main .homePics{
+ display: block;
+ margin-right: 50%;
+ padding: 22px;
+ position: relative;
+ bottom: 20%;
+ margin-bottom: 6%;
+ cursor: pointer;
+}
+.main .homePics::after{
+    content: "quis nostrud exercitation ullamco laboris nisi ut aliquip";
+    text-align: center;
+    font-family: 'Great Vibes', 'cursive';
+    display: block;
+    font-size: 23px;
+    word-spacing: 2px;
+}
+.main h1{
+    position: absolute;
+    z-index: 229;
+    margin: 12px;
+    color: rgba(194, 155, 104, 0.993);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 49px;
+    font-weight: inherit;
+    padding: 0px;
+    text-align: center;
+    margin: 0px 0px 40px 460px;
+    bottom: 20%;
+  
+}
+.main #B{
+    z-index: 229;
+    position: absolute;
+    font-family: 'Great Vibes', 'cursive';
+    font-weight: normal;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 28px;
+    background-color: #ddbea9;
+    border: 0px solid #c7ab99;
+    border-radius: 7px;
+    padding: 14px;
+    margin: 12px;
+    width: 17%;
+    bottom: 8%;
+    left: 60%;
+    cursor: pointer;
+}
+
+/*:before{
+content: " consectetur adipiscing elit";
+font-family: 'Great Vibes', 'cursive';
+display: block;
+}
+
+.main:after{
+    content: "quis nostrud exercitation ullamco laboris nisi ut aliquip ";
+    font-family: 'Great Vibes', 'cursive';
+}*/
+.main #B:hover{
+    background-color: #ddbea9dc; 
+    transition: 0.3s;
+}
+.main #B:active{
+    background-color: burlywood;
+}
+section .afterMain{
+    background-color: #eddcd2;
+}
+.afterMain p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 200px 0px 200px;
+    margin: 10px;
+    padding-top: 100px;
+}
+.afterMain #p2{
+    padding-top: 0px;
+    font-size: 37px;
+    padding-bottom: 2%;
+    margin: 0px;
+    text-align: justify;
+}
+.afterMain img{
+   display: inline-block;
+   margin: 2px;
+   padding: 2px;
+}
+
+.afterMain .whiteImages{
+    margin: 2%;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 33%;
+    cursor: pointer;
+    }
+
+    .afterMain .whiteImages img:hover, .main .homePics img:hover, .afterPimages img:hover{
+        opacity: 0.80;
+        transition: 0.3s;
+    }
+    .afterMain .whiteImages::after{
+        content: "quis nostrud laboris nisi ut aliquip";
+        text-align: center;
+        font-family: 'Great Vibes', 'cursive';
+        display: block;
+        font-size: 23px;
+        word-spacing: 2px;
+    }
+    .afterMain .quote1 p{
+        text-align: center;
+        font-size: 48px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: normal;
+        padding: 10px 100px 10px 100px;
+        margin: 10px;
+        font-family: 'Great Vibes', 'cursive';
+        color: rgb(80, 63, 41);
+        letter-spacing: 2px;
+        text-shadow:5px 5px 11px #d8cdc5;
+    }
+
+   /* .afterPimages{
+     display: inline-block;
+     
+    
+    }  */
+    .afterPimages img{
+        padding: 30px 0px 30px 0px;
+        margin-bottom: 20;
+        cursor: pointer;
+    
+    }
+
+    .grid-container {
+        display: grid;
+       
+        gap: 10px;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
+        padding: 5px 5px 5px 5px;
+        margin: 10px 10px 10px 30px;
+    
+       
+       
+      }
+    footer p{
+        margin: 0px;
+        padding: 5%;
+        font-size: 25px;
+        font-family:'Open Sans Condensed', sans-serif;
+    }
+    footer ul li{
+        display: inline;
+        margin: 30px;
+    
+    }
+    #footerElements{
+        margin: 0px;
+        font-style: italic;
+        position: relative;
+        padding-bottom: 40px;
+        font-weight: bold;
+        font-size: 21px;
+        font-family:'Open Sans Condensed', sans-serif;
+        cursor: pointer;
+        letter-spacing: 2px;
+        border: 0px solid red;
+      
+    }
+ 
+    #footerElements li:hover{
+        transition: 0.6s;
+        padding: 0px 8px 0px 8px;
+        color:rgb(255, 235, 206);
+    }
+    #footerElements::after{
+        display: block;
+        content: "exercitation ullamco laboris nisi ut aliquip";
+        font-family:'Open Sans Condensed', sans-serif;
+        padding-top: 17px;
+        font-style: normal;
+        font-size: 24px;
+        font-weight: normal;
+        word-spacing: 2px;
+    }
