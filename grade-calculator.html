@@ -1,0 +1,103 @@
+<!--This program accepts student grades as input and calculate the average, providing remarks indicating whether the student has passed or failed. 
+It processes grades for four subjects, assuming that the total marks for each subject are out of 100. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Average Grade Calculator</title>
+
+    <script>
+        function calcAverage() {
+            let subj1 = parseFloat(document.getElementById('subject1').value);
+            let subj2 = parseFloat(document.getElementById('subject2').value);
+            let subj3 = parseFloat(document.getElementById('subject3').value);
+            let subj4 = parseFloat(document.getElementById('subject4').value);
+
+            if (isNaN(subj1) || isNaN(subj2) || isNaN(subj3) || isNaN(subj4)) {
+                document.getElementById('result').innerText = "Please enter valid grades for all subjects.";
+                return;
+            }
+            let total = subj1 + subj2 + subj3 + subj4;
+            let average = total / 4;
+
+            let resultMessage;
+            let student_name = document.getElementById("name").value;
+            if (average >= 50) {
+                resultMessage = "Congratulations! " + student_name + ", you passed with an average grade of " + average + ".";
+
+            } else {
+                resultMessage = "Unfortunately! " + student_name + ", you failed with an average grade of " + average + ".";
+            }
+
+            document.getElementById('result').innerText = resultMessage;
+
+        }
+
+    </script>
+
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #div1 {
+            padding: 10px;
+            display: block;
+            margin-left: 450px;
+            margin-right: 0px;
+           
+        }
+
+        input {
+            padding: 5px;
+            width: 35%;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #name {
+            display: block;
+            padding: 5px;
+            margin-bottom: 12px;
+            width: 35%;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 16px;
+            width: 20%;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1><u>Average Grade Calculator</u></h1>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required>
+        <form id="gradesForm">
+            <input type="number" id="subject1" name="subject1" placeholder="Enter grade of subject 1"><br><br>
+            <input type="number" id="subject2" name="subject2" placeholder="Enter grade of subject 2"><br><br>
+            <input type="number" id="subject3" name="subject3" placeholder="Enter grade of subject 3"><br><br>
+            <input type="number" id="subject4" name="subject4" placeholder="Enter grade of subject 4"><br><br>
+            <button type="button" onclick="calcAverage()">Calculate Average</button>
+        </form>
+
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>
