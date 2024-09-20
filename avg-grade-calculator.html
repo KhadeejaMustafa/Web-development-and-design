@@ -1,6 +1,6 @@
 <!--This program accepts student grades as input and calculate the average, providing remarks indicating whether the student has passed or failed. 
-It processes grades for four subjects, assuming that the total marks for each subject are out of 100. -->
-
+It processes grades for four subjects, assuming that the total marks for each subject are out of 100.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,12 +45,17 @@ It processes grades for four subjects, assuming that the total marks for each su
             margin: 0px;
             padding: 0px;
         }
-        #div1 {
-            padding: 10px;
+
+        .container {
+            width: 67%;
             display: block;
-            margin-left: 450px;
-            margin-right: 0px;
-           
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(212, 227, 227);
+            border-radius: 50px;
+            align-self: center;
+            margin: 50px auto;
+            border: 5px rgb(187, 199, 199) double;
         }
 
         input {
@@ -62,16 +67,17 @@ It processes grades for four subjects, assuming that the total marks for each su
         }
 
         #name {
-            display: block;
             padding: 5px;
+            display: inline-block;
             margin-bottom: 12px;
-            width: 35%;
             font-size: 16px;
             font-family: 'Times New Roman', Times, serif;
         }
 
         label {
             font-size: 18px;
+            padding: 2px;
+            display: block;
         }
 
         button {
@@ -80,11 +86,13 @@ It processes grades for four subjects, assuming that the total marks for each su
             padding: 10px;
             font-family: 'Times New Roman', Times, serif;
         }
+
     </style>
 </head>
 
 <body>
-    <div id="div1">
+
+    <div id="div1" class="container">
         <h1><u>Average Grade Calculator</u></h1>
         <label for="name">Enter your name:</label>
         <input type="text" id="name" required>
@@ -98,6 +106,7 @@ It processes grades for four subjects, assuming that the total marks for each su
 
         <p id="result"></p>
     </div>
+
 </body>
 
 </html>
