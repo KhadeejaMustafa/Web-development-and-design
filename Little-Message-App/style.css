@@ -1,0 +1,245 @@
+body {
+    background-color: rgb(236, 205, 210);
+    color: rgb(44, 43, 43);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1;
+}
+
+main {
+
+    margin: auto;
+    max-width: 800px;
+    padding: 26px;
+}
+
+article {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(205, 147, 156);
+    border-radius: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    position: relative;
+}
+
+.userDp {
+
+    background-color: rgb(255, 247, 248);
+    border: 1px solid rgb(211, 157, 166);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-right: 0%;
+
+}
+
+
+.userDp img {
+
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+#theArticle {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 12px;
+}
+
+
+button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding-left: 0%;
+    padding-right: 0%;
+    transform: scale(1);
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.thecloseButton{
+    float: right;
+}
+
+button.thecloseButton:hover {
+    opacity: 0.6;
+    
+}
+
+button.sendButton {
+    left: 9.7px;
+    background-color: rgb(250, 215, 232);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+
+   
+}
+.sendButton img{
+    padding: 0%;
+    margin: 0%;
+    border-radius: 50%;
+}
+
+button.heart {
+    float: right;
+
+}
+
+
+
+/* date posted */
+
+.datePosted {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 90%;
+    float: left;
+}
+
+
+.datePosted time {
+    color: rgb(97, 94, 94);
+}
+
+/* footer*/
+footer {
+    margin-top: 12px;
+    height: 20px;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* the hr*/
+hr {
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+/*form*/
+
+form {
+    background-color: rgb(249, 227, 231);
+    border: 1px solid rgb(205, 147, 156);
+    border-radius: 12px;
+    margin: 4px;
+    padding: 20px 23px 30px 17px;
+}
+
+/* textarea */
+textarea {
+    border: 1px solid rgb(37, 30, 31);
+    color: black;
+    font-size: 15px;
+    height: 50px;
+    width: 98%;
+    padding: 5px;
+    resize: none;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+textarea:focus {
+    border-color: rgb(205, 147, 156);
+    outline: none;
+}
+
+/* field set*/
+fieldset {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    float: left;
+    width: calc(100% - 122px);
+    border: 0px;
+}
+
+fieldset div {
+    margin-left: 6px;
+    margin-top: 3px;
+
+
+}
+
+
+.logo {
+    float: left;
+    background-color: rgb(255, 247, 248);
+    border: 1px solid rgb(211, 157, 166);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.logo img {
+    margin-left: 5%;
+    margin-top: 5%;
+
+
+
+}
+
+
+/*  headings */
+h1 {
+    font-size: 18px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 8px;
+    line-height: 1.2;
+
+}
+
+h2 {
+    font-size: 16px;
+    color: #a29d9d;
+    font-family: 'open-sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+P{
+    font-size:16px ;
+}
+
+.character-count{
+    color: palevioletred;
+    font-size: 11px;
+}
+
+/* the character limit error */
+
+form.error{
+    background-color: rgb(255, 139, 139);
+    border-color: rgb(234, 49, 49);
+}
+
+
+form.error div{
+    color: red;
+}
